@@ -13,6 +13,13 @@
             <li>
               <a class="nav-link commonNavIcon profile-icon" href="/users/{{ Auth::user()->id }}"></a>
             </li>
+            <li>
+              <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">サインアウト<br/>
+              </a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+              </form>
+            </li>
           </ul>
         </div>
       </div>
