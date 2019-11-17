@@ -15,12 +15,13 @@
         </div>
 
         <div class="form-group">
-          <input id="password" type="password" class="form-control" name="password" required>
+          <input id="password" type="password" class="form-control" name="password" placeholder="パスワード" required>
         </div>
 
         <div class="actions">
-          <input id="password" type="password" class="form-control" name="password" placeholder="パスワード" required>
+          <input type="submit" name="login" value="ログインする" class="btn btn-primary w-100">
         </div>
+
       </form>
 
       <br>
